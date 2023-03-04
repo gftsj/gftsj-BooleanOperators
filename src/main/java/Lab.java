@@ -14,7 +14,8 @@ public class Lab {
      * @return if b is true, return true. if b is false, return false.
      */
     public boolean returnBoolean(boolean b){
-        return false;
+        b = b ? true : false;
+        return b;
     }
 
     /**
@@ -23,7 +24,9 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
-        return false;
+        b = b ? true : false; 
+
+        return !b;
     }
 
     /**
@@ -33,9 +36,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnAnd(boolean b1, boolean b2){
-        return false;
+        
+       boolean b = (b1 && b2 == true ) ? true : false;
+        return b;
     }
-
     /**
      * @param b1 a true/false value.
      * @param b2 a true/false value.
@@ -43,8 +47,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
-        return false;
+        boolean b = (b1 || b2 == true ) ? true : (b1 || b2 == false) ? false : true;
+        return b;
     }
+    //var result = (players==11)? "baseball" : ((players==9) ? "footie" : "darts");
 
 
 }
